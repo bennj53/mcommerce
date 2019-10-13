@@ -1,4 +1,4 @@
-package com.clientui.clientui;
+package com.clientui;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
