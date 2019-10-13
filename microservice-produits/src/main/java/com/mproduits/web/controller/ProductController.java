@@ -35,7 +35,8 @@ public class ProductController {
 
         Optional<Product> product = productDao.findById(id);
 
-        if(!product.isPresent())  throw new ProductNotFoundException("Le produit correspondant à l'id " + id + " n'existe pas");
+        if(!product.isPresent())
+            throw new ProductNotFoundException("Product not found");
 
         return product;
     }
