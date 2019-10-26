@@ -15,6 +15,7 @@ target/
 *.iml
 *.ipr
 config-server-repo/
+mcommerce-config-repo/
 
 ### NetBeans ###
 nbproject/private/
