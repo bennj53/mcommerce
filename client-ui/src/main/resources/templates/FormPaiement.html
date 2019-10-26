@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mcommerce</title>
+
+    <<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+<div class="container spacer">
+    <div class="well col-md-6 col-md-offset-3">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-4" >
+                <h2>Create Business Profile</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form th:action="@{SavePaiement}" method="post" th:object="${paiementBean}">
+                    <div class="form-group">
+                        <label class="control-label">Label</label>
+                        <input type="text" th:field="*{numeroCarte}" class="form-control" id="inputNumeroCarte" placeholder="Access to MDS/OPS/..."/>
+                        <span></span>
+                    </div>
+
+                    <div class="col-md-8 col-md-offset-4">
+                        <button type="submit" class="btn btn-primary" name="action" value="save">Create</button>
+                        <button type="submit" class="btn btn-primary" name="action" value="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

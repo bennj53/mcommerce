@@ -4,6 +4,7 @@ package com.mcommandes.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -15,7 +16,7 @@ public class Commande {
 
     private Integer productId;
 
-    private Date dateCommande;
+    private LocalDateTime dateCommande;
 
     private Integer quantite;
 
@@ -24,7 +25,7 @@ public class Commande {
     public Commande() {
     }
 
-    public Commande(int id, Integer productId, Date dateCommande, Integer quantite, Boolean commandePayee) {
+    public Commande(int id, Integer productId, LocalDateTime dateCommande, Integer quantite, Boolean commandePayee) {
         this.id = id;
         this.productId = productId;
         this.dateCommande = dateCommande;
@@ -48,11 +49,11 @@ public class Commande {
         this.productId = productId;
     }
 
-    public Date getDateCommande() {
+    public LocalDateTime getDateCommande() {
         return dateCommande;
     }
 
-    public void setDateCommande(Date dateCommande) {
+    public void setDateCommande(LocalDateTime dateCommande) {
         this.dateCommande = dateCommande;
     }
 
